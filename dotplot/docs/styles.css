@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía global */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #1a73e8; /* Color acento */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555555;
+}
+
+/* Secciones */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+section p, section li {
+    font-size: 1em;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Tutorial imágenes */
+.tutorial-images {
+    display: flex;
+    flex-direction: column; /* Una imagen por fila */
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tutorial-images img {
+    max-width: 80%; /* Más pequeñas que el contenedor */
+    height: auto;
+    display: block;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Listado de pasos en tutorial */
+#tutorial ol li {
+    margin-bottom: 25px; /* Espacio entre pasos */
+}
+
+/* Botón de descarga */
+.download-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.download-button:hover {
+    background-color: #1666c1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    color: #777777;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .tutorial-images {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .tutorial-images img {
+        max-width: 100%;
+    }
+}
