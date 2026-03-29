@@ -15,17 +15,16 @@ Dotly is a lightweight Python tool with a graphical interface (PyQt5) that allow
 
 ## Installation
 
-1. Download the `main.py` file or the precompiled executable (`.exe`) from this repository.
+1. Download the `main.py` source code from this repository.
 2. Install required packages if using `main.py` (pyqt5, matplotlib)
 4. Run the application:
-- Double-click the `.exe` or
-- Run `python main.py` in your terminal.
+    `python main.py` in your terminal.
 
 ---
 
 ## Quick Tutorial
 
-1. Open the program (`main.py` or the `.exe`).
+1. Run the code.
 2. Paste your sequences in the text boxes or use the “Load FASTA” buttons.
 3. Adjust window size and stringency to control dotplot sensitivity.
 4. Set a chart title and axis labels if desired.
