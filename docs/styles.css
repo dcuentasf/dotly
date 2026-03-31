@@ -22,17 +22,10 @@ header {
     border-bottom: 1px solid #e0e0e0;
 }
 
-header h1 {/* Header */
-header {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 40px 20px;
-}
-
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center; /* centrar por defecto */
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -50,8 +43,10 @@ header {
     transform: scale(1.2);
     color: #1a73e8;
 }
+
+header h1 {
     font-size: 2.5em;
-    color: #1a73e8; /* Color acento */
+    color: #1a73e8;
     margin-bottom: 10px;
 }
 
@@ -79,11 +74,9 @@ section p, section li {
     margin-bottom: 15px;
 }
 
-
 /* ========================= */
 /* WEB APP (Dotplot UI) */
 /* ========================= */
-
 
 /* Contenedor principal (layout tipo PyQt) */
 #main-container {
@@ -199,29 +192,10 @@ label {
     }
 }
 
-/* Tutorial imágenes */
-.tutorial-images {
-    display: flex;
-    flex-direction: column; /* Una imagen por fila */
-    gap: 15px;
-    align-items: center;
-    margin-top: 10px;
-}
+/* ========================= */
+/* DOWNLOAD BUTTON */
+/* ========================= */
 
-.tutorial-images img {
-    max-width: 80%; /* Más pequeñas que el contenedor */
-    height: auto;
-    display: block;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-}
-
-/* Listado de pasos en tutorial */
-#tutorial ol li {
-    margin-bottom: 25px; /* Espacio entre pasos */
-}
-
-/* Botón de descarga */
 .download-button {
     display: inline-block;
     padding: 12px 25px;
@@ -238,6 +212,24 @@ label {
     background-color: #1666c1;
 }
 
+/* ========================= */
+/* DESKTOP APP PREVIEW */
+/* ========================= */
+#desktop-preview {
+    text-align: left; /* mantiene el texto a la izquierda */
+    margin-top: 40px;
+}
+
+#desktop-preview img {
+    display: block;       /* convierte la imagen en un bloque */
+    margin: 20px auto;    /* auto en los lados centra el bloque horizontalmente */
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -247,7 +239,10 @@ footer {
     border-top: 1px solid #e0e0e0;
 }
 
-/* Responsive */
+/* ========================= */
+/* RESPONSIVE GENERAL */
+/* ========================= */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -257,12 +252,7 @@ footer {
         font-size: 1.5em;
     }
 
-    .tutorial-images {
-        max-width: 100%;
-        gap: 10px;
-    }
-
-    .tutorial-images img {
+    #desktop-preview img {
         max-width: 100%;
     }
 }
